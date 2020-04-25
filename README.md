@@ -2,7 +2,7 @@ Squirrel Sites Tracker in Central Park New York
 ====================================
 
 <div align="center">
-  <img src="https://github.com/zihui-zhou/Django_Project/blob/master/Screen%20Shot%202020-04-24%20at%208.44.51%20PM.png"><br>
+  <img src="https://github.com/zihui-zhou/Django_Project/blob/master/WechatIMG1055.jpeg"><br>
 </div>
 
 What is it?
