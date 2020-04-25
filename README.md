@@ -2,7 +2,7 @@ Squirrel Sites Tracker in Central Park New York
 ====================================
 
 <div align="center">
-  <img src="https://github.com/Maggie1226/Squirrel_Tracker_Session2_Group2/blob/master/sightings/static/sightings/Woodland-squirrel-clipart.jpg"><br>
+  <img src="https://github.com/zihui-zhou/Django_Project/blob/master/WechatIMG420.jpeg"><br>
 </div>
 
 What is it?
