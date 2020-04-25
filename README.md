@@ -26,10 +26,10 @@ $ python manage.py export_squirrel_data /path/to/file.csv
 - Edit current squirrel sites. Located at `/sightings/<unique-squirrel-id>`
 - See the statistics on current squirrel sites. Located at `/sightings/stats`
 
-About Developer
+ondvContributorsossssssntrioonooCo
 -------------------
 - Project Group 17
-- UNIs: zz2694, mh4048
+- UNIsss: zz2694, mh4048
 
 Link to run server
 -------------------
