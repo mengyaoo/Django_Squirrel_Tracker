@@ -7,7 +7,7 @@ Squirrel Sites Tracker in Central Park New York
 
 Description
 -------------------
-**Squirrel Tracker Final Project** is a web application in Django Framework to track all the known squirrel sites in Central Park of New York. Our source data is from [`2018 Central Park Squirrel Census data`](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw).
+**Squirrel Tracker Final Project** is a web application in Django Framework to track all the known squirrel sites in Central Park of New York. Our source data is from [`2018 Central Park Squirrel Census data`](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw). The users are allowed to add, update, and view squirrel data.
 
 Main Features
 -------------------
