@@ -28,8 +28,8 @@ $ python manage.py export_squirrel_data /path/to/file.csv
 
 About Developer
 -------------------
-- Project Group 2 Session 2
-- UNIs: [mj2940 ym2767]
+- Project Group 17
+- UNIs: [zz2694 mh4048]
 
 Link to run server
 -------------------
