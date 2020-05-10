@@ -4,8 +4,8 @@ from django.shortcuts import redirect
 from .models import Sighting
 from .form import SquirrelForm
 
-def squirrel_id(request, Unique_Squirrel_Id):
-    data = Sighting.objects.get(Unique_Squirrel_ID=Unique_Squirrel_Id)
+def squirrel_id(request, squirrel_id):
+    data = Sighting.objects.get(Unique_Squirrel_ID=squirrel_id)
     if request.method == 'POST':
         form = SquirrelForm(request.POST, instance=data)
         if form.is_valid():
