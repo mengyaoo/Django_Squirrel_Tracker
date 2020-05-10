@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import redirect
-from .models import squirrel_site
+from .models import Sighting
 from .form import SquirrelForm
 
 def squirrel_id(request, Unique_Squirrel_Id):
-    data = squirrel_site.objects.get(Unique_Squirrel_ID=Unique_Squirrel_Id)
+    data = Sighting.objects.get(Unique_Squirrel_ID=Unique_Squirrel_Id)
     if request.method == 'POST':
         form = SquirrelForm(request.POST, instance=data)
         if form.is_valid():
@@ -35,7 +35,7 @@ def add(request):
 
 def all_squirrels(request):
 
-    squirrels= squirrel_site.objects.all()
+    squirrels= Sighting.objects.all()
     context={
             'squirrels':squirrels,
             }
@@ -43,15 +43,15 @@ def all_squirrels(request):
 
 
 def stats(request):
-    total_sites=squirrel_site.objects.count()
-    Running_count=squirrel_site.objects.filter(Running=True).count()
-    Chasing_count=squirrel_site.objects.filter(Chasing=True).count()
-    Climbing_count=squirrel_site.objects.filter(Climbing=True).count()
-    Eating_count=squirrel_site.objects.filter(Eating=True).count()
-    Foraging_count=squirrel_site.objects.filter(Foraging=True).count()
-    Kuks_count=squirrel_site.objects.filter(Kuks=True).count()
-    Quaas_count=squirrel_site.objects.filter(Quaas=True).count()
-    Moans_count=squirrel_site.objects.filter(Moans=True).count()
+    total_sites=Sighting.objects.count()
+    Running_count=Sighting.objects.filter(Running=True).count()
+    Chasing_count=Sighting.objects.filter(Chasing=True).count()
+    Climbing_count=Sighting.objects.filter(Climbing=True).count()
+    Eating_count=Sighting.objects.filter(Eating=True).count()
+    Foraging_count=Sighting.objects.filter(Foraging=True).count()
+    Kuks_count=Sighting.objects.filter(Kuks=True).count()
+    Quaas_count=Sighting.objects.filter(Quaas=True).count()
+    Moans_count=Sighting.objects.filter(Moans=True).count()
     context={
             "Total sites":total_sites,
             "Number of Running squirrels":Running_count,
@@ -66,7 +66,7 @@ def stats(request):
     return render(request,"sightings/stats.html",{'context':context})
 
 def map (request):
-    Squirrels = squirrel_site.objects.all()[:100]
+    Squirrels = Sighting.objects.all()[:100]
     context = {
             'Squirrels': Squirrels
             }

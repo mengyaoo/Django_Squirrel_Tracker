@@ -1,7 +1,7 @@
 from django.forms import ModelForm
-from .models import squirrel_site
+from .models import Sighting
 
 class SquirrelForm(ModelForm):
     class Meta:
-        model=squirrel_site
+        model=Sighting
         fields = '__all__'
