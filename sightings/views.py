@@ -9,7 +9,7 @@ def squirrel_id(request, squirrel_id_specific):
     if request.method == 'POST':
         form = SquirrelForm(request.POST, instance=data)
         if form.is_valid():
-            form.save(commit=True)
+            form.save()
             return redirect(f'/sightings')
     else:
         form = SquirrelForm(instance=data)
