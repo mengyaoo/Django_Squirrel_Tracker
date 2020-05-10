@@ -1,4 +1,2 @@
-__pycache__
+__pycache__/
 *.swp
-*.sqlite3
-*.pyc
