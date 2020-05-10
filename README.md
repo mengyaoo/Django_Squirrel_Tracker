@@ -30,3 +30,9 @@ Contributors
 -------------------
 - Project Group 17: Zihui Zhou, Mengyao He
 - UNIs: zz2694, mh4048
+
+Website
+-------------------
+http://34.86.107.55
+http://34.86.107.55/sightings/
+http://34.86.107.55/map/
