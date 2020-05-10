@@ -6,4 +6,5 @@ urlpatterns=[
         path('add/',views.add),
         path('stats/',views.stats),
         re_path(r'(\d.*)/',squirrel_id),
+        path('map/', views.map),
 ]
