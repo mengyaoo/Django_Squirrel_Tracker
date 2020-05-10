@@ -42,9 +42,9 @@
     <head>
     <body>
         {% load static %}
-	<h1 align='center'>Squirrel Sites</h1>
+	<h1 align='center'>Squirrel Sites Tracker in Central Park New York</h1>
         <img align='right' src={% static "sightings/Woodland-squirrel-clipart.jpg" %} alt="squirrel" width="340" height="430">
-         <p title ="copyright"  style="color: #465D4C; font-size: 18px; font-family: 'Open Sans',sans-serif;"> Group Projects of Tools for Analytics by Ming Jin and Yixuan Ma.</p>
+         <p title ="copyright"  style="color: #465D4C; font-size: 18px; font-family: 'Open Sans',sans-serif;"> Group Projects of Tools for Analytics by Mengyao He and Zihui Zhou.</p>
         <hr>
 
         <p align='left'><a style="font-size: 14px; color:rgb(25, 27, 27); font-family: 'Helvetica', sans-serif;" href="add/">Add more Squirrel site here</a><p>
@@ -54,7 +54,7 @@
         <ul>
                  {% for sq in squirrels %}
                  <li>
-                         <a href="{{ sq.Unique_Squirrel_ID }}/">{{ sq.Unique_Squirrel_ID }}</a>
+                         <a href="{{ data.Unique_Squirrel_ID }}/">{{ sq.Unique_Squirrel_ID }}</a>
                  </li>
                  {% endfor %}
         </ul>
