@@ -33,6 +33,6 @@ Contributors
 
 Website
 -------------------
-http://34.86.107.55
-http://34.86.107.55/sightings/
-http://34.86.107.55/map/
+- http://34.86.107.55
+- http://34.86.107.55/sightings/
+- http://34.86.107.55/map/
