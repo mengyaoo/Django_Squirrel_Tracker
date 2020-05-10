@@ -30,8 +30,3 @@ Contributors
 -------------------
 - Project Group 17: Zihui Zhou, Mengyao He
 - UNIs: zz2694, mh4048
-
-Link to run server
--------------------
-- **Link to sightings**: https://squirrel-site-tracker.appspot.com/sightings/
-- **Link to map**: https://squirrel-site-tracker.appspot.com/map/
