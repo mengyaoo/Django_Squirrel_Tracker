@@ -51,16 +51,11 @@
         <h2 align='left'> List of All Squirrels in Central Park</h2>
         <br>
         <ul>
-                 {% for sq in squirrels %}
+                 {% for data in squirrels %}
                  <li>
-<<<<<<< HEAD
                          <a href="{{ data.unique_squirrel_id }}/">{{ data.unique_squirrel_id }}</a>
                  </li>
-=======
-			 <a href="{{ sq.Unique_Squirrel_ID }}/">{{ sq.Unique_Squirrel_ID }}</a>
-		 </li>
->>>>>>> 44943619b2234ac32394b3498b2f42561881ea15
-                 {% endfor %}
+		 {% endfor %}
         </ul>
     </body>
     </head>
