@@ -25,7 +25,7 @@ SECRET_KEY = 'pmoukf2%=x1a6#74v7ch7$ey%dmb1d-=cml-_yx27!5)@o=h12'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'squirrels',
+    'sightings',
+    'map',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +120,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'collected-static'
