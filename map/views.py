@@ -1,6 +1,6 @@
 from django.shortcuts import render
 import sys,os,inspect
-from sightings.models import squirrelsite
+from sightings.models import squirrel_site
 
 
 def index(reques):
