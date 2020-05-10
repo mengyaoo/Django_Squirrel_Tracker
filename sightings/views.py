@@ -33,14 +33,6 @@ def add(request):
     return render(request,'sightings/edit.html',context)
 
 
-def all_squirrels(request):
-
-    squirrels= Sighting.objects.all()
-    context={
-            'squirrels':squirrels,
-            }
-    return render(request,'sightings/all.html',context)
-
 
 def stats(request):
     total_sites=Sighting.objects.count()
@@ -71,3 +63,12 @@ def map (request):
             'Squirrels': Squirrels
             }
     return render (request, 'sightings/map.html', context)
+
+
+def all_squirrels(request):
+    squirrels = Sighting.objects.all()
+    context = {'squirrels': squirrels}
+    return render(request, 'sightings/all.html', context)
+
+
+
