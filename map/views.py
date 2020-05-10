@@ -3,7 +3,7 @@ import sys,os,inspect
 from sightings.models import Sighting
 
 
-def index(reques):
+def index(request):
     squirrels = Sighting.objects.all()
     sightings = squirrels[:100]
     context={
