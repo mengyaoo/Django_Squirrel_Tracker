@@ -4,18 +4,16 @@ from django.shortcuts import redirect
 from .models import Sighting
 from .form import SquirrelForm
 
-def squirrel_id(request, squirrel_id):
-    data = Sighting.objects.get(Unique_Squirrel_ID=squirrel_id)
+def squirrel_id(request, squirrel_id_specific):
+    data = Sighting.objects.get(Unique_Squirrel_ID=squirrel_id_specific)
     if request.method == 'POST':
         form = SquirrelForm(request.POST, instance=data)
         if form.is_valid():
-            form.save(commit=True)
+            form.save()
             return redirect(f'/sightings')
     else:
         form = SquirrelForm(instance=data)
-    context = {
-        'form': form,
-    }
+    context = {'form': form}
     return render(request, 'sightings/edit.html', context)
 
 
@@ -27,19 +25,9 @@ def add(request):
             return redirect("/sightings")
     else:
         form=SquirrelForm()
-    context={
-        'form':form,
-            }
+    context={'form':form}
     return render(request,'sightings/edit.html',context)
 
-
-def all_squirrels(request):
-
-    squirrels= Sighting.objects.all()
-    context={
-            'squirrels':squirrels,
-            }
-    return render(request,'sightings/all.html',context)
 
 
 def stats(request):
@@ -65,9 +53,11 @@ def stats(request):
     }
     return render(request,"sightings/stats.html",{'context':context})
 
-def map (request):
-    Squirrels = Sighting.objects.all()[:100]
-    context = {
-            'Squirrels': Squirrels
-            }
-    return render (request, 'sightings/map.html', context)
+
+def all_squirrels(request):
+    squirrels = Sighting.objects.all()
+    context = {'squirrels': squirrels}
+    return render(request, 'sightings/all.html', context)
+
+
+
