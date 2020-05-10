@@ -1,2 +1,4 @@
-__pycache__/
-*.swp
+*.pyc
+__pycache__
+collected-static
+*.sqlite3
