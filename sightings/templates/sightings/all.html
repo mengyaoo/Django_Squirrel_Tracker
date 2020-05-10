@@ -43,8 +43,7 @@
     <body>
         {% load static %}
 	<h1 align='center'>Squirrel Sites Tracker in Central Park New York</h1>
-        <img align='right' src={% static "sightings/Woodland-squirrel-clipart.jpg" %} alt="squirrel" width="340" height="430">
-         <p title ="copyright"  style="color: #465D4C; font-size: 18px; font-family: 'Open Sans',sans-serif;"> Group Projects of Tools for Analytics by Mengyao He and Zihui Zhou.</p>
+        <p title ="copyright"  style="color: #465D4C; font-size: 18px; font-family: 'Open Sans',sans-serif;"> Group Projects of Tools for Analytics by Mengyao He and Zihui Zhou.</p>
         <hr>
 
         <p align='left'><a style="font-size: 14px; color:rgb(25, 27, 27); font-family: 'Helvetica', sans-serif;" href="add/">Add more Squirrel site here</a><p>
@@ -52,9 +51,9 @@
         <h2 align='left'> List of All Squirrels in Central Park</h2>
         <br>
         <ul>
-                 {% for sq in squirrels %}
+                 {% for data in squirrels %}
                  <li>
-                         <a href="{{ data.Unique_Squirrel_ID }}/">{{ sq.Unique_Squirrel_ID }}</a>
+                         <a href="{{ data.Unique_Squirrel_ID }}/">{{ data.Unique_Squirrel_ID }}</a>
                  </li>
                  {% endfor %}
         </ul>
