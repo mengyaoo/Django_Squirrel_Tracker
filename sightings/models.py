@@ -47,7 +47,7 @@ class squirrel_site(models.Model):
     Ground_Plane="GP"
     Above_Ground="AG"
     Location_CHOICES=[(Ground_Plane,"Ground Plane"),(Above_Ground,"Above Ground"),]
-        Location=models.CharField(
+    Location=models.CharField(
         max_length=20,
         choices=Location_CHOICES,
         default=Ground_Plane,
@@ -55,7 +55,7 @@ class squirrel_site(models.Model):
         )
 
 
-        Specific_location=models.TextField(
+    Specific_location=models.TextField(
         max_length=500,
         blank=True,
         )
@@ -85,54 +85,54 @@ class squirrel_site(models.Model):
         blank=True,
         )
 
-   Kuks=models.BooleanField(
-       default=False,
-       help_text='\n A squirrel was found qukking.',
-       )
+    Kuks=models.BooleanField(
+        default=False,
+        help_text='\n A squirrel was found qukking.',
+        )
 
 
-   Quaas=models.BooleanField(
-       default=False,
-       help_text='\n A squirrel was found quaaing.',
-       )
+    Quaas=models.BooleanField(
+        default=False,
+        help_text='\n A squirrel was found quaaing.',
+        )
 
 
-   Moans=models.BooleanField(
-       default=False,
-       help_text='\n A squirrel was found moaning.',
-       )
+    Moans=models.BooleanField(
+        default=False,
+        help_text='\n A squirrel was found moaning.',
+        )
 
 
-   Tail_flags=models.BooleanField(
-       default=False,
-       help_text="\n A squirrel was seen flagging its tail.",
-       )
+    Tail_flags=models.BooleanField(
+        default=False,
+        help_text="\n A squirrel was seen flagging its tail.",
+        )
 
 
-   Tail_twitches=models.BooleanField(
-       default=False,
-       help_text='\n A squirrel was seen twitching its tail.',
-       )
+    Tail_twitches=models.BooleanField(
+        default=False,
+        help_text='\n A squirrel was seen twitching its tail.',
+        )
+ 
+    Approaches=models.BooleanField(
+        default=False,
+        help_text='\n A squirrel was seen approaching human, seeking food.',
+        )
 
-   Approaches=models.BooleanField(
-       default=False,
-       help_text='\n A squirrel was seen approaching human, seeking food.',
-       )
 
+    Indifferent=models.BooleanField(
+        default=False,
+        help_text='\n A squirrel was indifferent to human beings’ presence.',
+        )
 
-   Indifferent=models.BooleanField(
-       default=False,
-       help_text='\n A squirrel was indifferent to human beings’ presence.',
-       )
+    Runs_from=models.BooleanField(
+        default=False,
+        help_text='\n A squirrel was seen running away.',
+        )
 
-   Runs_from=models.BooleanField(
-       default=False,
-       help_text='\n A squirrel was seen running away.',
-       )
-
-   Other_interactions=models.TextField(
-       max_length=500,
-       blank=True,
-       help_text='\n Other types of interactions between squirrels and humans were noticed.',
-       )
+    Other_interactions=models.TextField(
+        max_length=500,
+        blank=True,
+        help_text='\n Other types of interactions between squirrels and humans were noticed.',
+        )
 
